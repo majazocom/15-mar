@@ -50,3 +50,23 @@ console.log('initial state ', store.getState()); //logga ut statet
 store.subscribe(() => {
     console.log('updated state ', store.getState());
 })
+
+//sedan gör vi en dispatch för att uppdatera statet
+//vi ber biträdet gå med vår action (buyCheese) till store och uppdatera statet
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+store.dispatch(buyCheese());
+
+//hantera avregistrering av lyssnare
+
+const unsubscribe = store.subscribe(() => {
+    console.log('updated state ', store.getState());
+});
+
+unsubscribe();
+
+//Nu har vi implementerat alla våra responsibilities
