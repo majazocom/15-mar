@@ -56,7 +56,8 @@ store.subscribe(() => {
 store.dispatch(buyCheese());
 store.dispatch(buyCheese());
 store.dispatch(buyCheese());
-store.dispatch(buyCheese());
+store.dispatch(addCheese());
+store.dispatch(addCheese());
 store.dispatch(buyCheese());
 store.dispatch(buyCheese());
 store.dispatch(buyCheese());
